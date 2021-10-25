@@ -1,78 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+
 * {
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-.clear {
-  clear: left;
-}
-
-.container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.top-wrapper {
-  padding: 150px 0 250px 0;
-  background-image: url(images/cover1.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
-
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-family: poppins;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
-}
-
-.top-wrapper p {
-  font-family: poppins;
-  opacity: 0.7;
-  margin-bottom: 3px;
-}
-
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
+/* Header by Annisa Ubay */
 header {
-  height: 65px;
+  position: fixed;
+  height: 4rem;
   width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
+  background-color: #F9F9F9;
   top: 0;
   z-index: 10;
 }
 
+header .container{
+  padding: 0 1.5rem;
+  width: 100%
+}
+
 .logo {
-  width: 124px;
-  margin-top: 20px;
+  padding: 0.8rem;
+  width: 48%;
+  margin-top: 0;
+  color:#F9F9F9;
 }
 
 .header-left {
@@ -81,24 +34,24 @@ header {
 
 .header-right {
   float: right;
-  margin-right: -25px;
-  font-family: poppins;
 }
 
+/* CSS untuk tag <a> didalam header-right */
 .header-right a {
   line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
+  padding: 0 1.2rem;
+  color: #242E32;
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+.header-right a:hover{
+  color: #D35054;
+  transition: all ease 0.3s;
 }
 
-/* Tambahkan CSS untuk menu-icon */
 .menu-icon {
   color: white;
   float: right;
@@ -107,94 +60,147 @@ header {
   /* Gantikan property display ke none */
   display: none;
 }
-/* main2 */
+/* End of Header */
 
-.lesson-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
 
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
-  text-align: center;
-}
-
-.heading1 h2 {
-  font-weight: normal;
-  font-family: poppins;
-  color: black;
-  margin-bottom: 50px;
-}
-
-.heading h2 {
-  font-weight: bold;
-  font-family: poppins;
-  color: white;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
+/* Body by Annisa Putri dan Anugrah */
+body {
   width: 100%;
-  color: white;
+  min-height: 100vh;
+  background-color: #F9F9F9;
+  margin: 0;
+  padding: 0;
 }
 
-.lesson-icon img {
-  width: 200px;
-  height: 200px;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 12px;
-  color: black;
-  font-family: poppins;
-}
-
-.heading h3 {
-  font-weight: normal;
-  color:white;
-}
-
-/* message wrapper */
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
+.sec {
+  width: 100%;
+  position: relative;
   text-align: center;
-  background-image: url(images/cover2.png);
+}
+
+.sec1 {
+  background-image: url(images/cover1.png);
   background-size: cover;
-  padding: 100px 0 200px 0;
+  color: #F9F9F9;
   margin-top: -1.5rem;
 }
 
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
+.sec1 .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12rem 12rem 0 12rem;
 }
 
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+.sec1 .content .wrap p {
+  font-weight: 1.5rem;
 }
+
+.sec1 .content .scroll {
+  margin-top: 15rem;
+}
+
+.sec1 .content .scroll p {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.sec1, .sec2 {
+  height: 115vh;
+}
+
+.sec2 .wrap {
+  padding: 2rem;
+}
+
+.sec2 .wrap h1 {
+  margin-bottom: 3.5rem;
+}
+
+.sec2 .wrap .content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sec2 .wrap .content-wrap .content {
+  width: 17rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.sec2 .wrap .content-wrap .content img {
+  width: 100%;
+  height: auto;
+}
+
+
+.sec2 .wrap .content-wrap .content p {
+  font-size: 0.8rem;
+}
+
+.sec3 {
+  height: 100vh;
+  background-image: url(images/cover2.png);
+  background-size: cover;
+  color: #F9F9F9;
+}
+
+.sec3 .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12rem 12rem 0 12rem;
+}
+
+.sec3 .content h1 {
+  font-size: 2.5rem;
+  margin-bottom: -1.2rem;
+}
+
+.sec3 .content p, .sec3 .content a {
+  font-size: 1.5rem;
+}
+
+.sec3 .content a {
+  margin-top: 1.5rem;
+  border: 3px solid #F9F9F9;
+  padding: 1.5rem 3rem;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #F9F9F9;
+}
+
+.sec3 .content a:hover {
+  background: #F9F9F9;
+  color: #242E32;
+  font-weight: bold;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+
+.sec1 h1, .sec2 h1 {
+  font-size: 3rem;
+}
+/* End of Body*/
 
 
 /* Footer  by Aris */
@@ -222,4 +228,9 @@ footer {
 .selected {
   font-weight: bold;
   font-size: 20px;
+}
+
+/* responsive */
+.clear {
+  clear: left;
 }
